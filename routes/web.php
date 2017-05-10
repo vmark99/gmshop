@@ -22,4 +22,4 @@ Route::get('/', function () {
 
 Route::get('/games', 'productController@showGames')->name('games');
 Route::get('/movies', 'productController@showMovies')->name('movies');
-Route::get('/{name}', 'productController@showProduct')->name('product');
+//Route::get('/{name}', 'productController@showProduct')->name('product');
