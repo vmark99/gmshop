@@ -66,7 +66,7 @@
                         <img src="{{cloudinaryShow($product->url, 320, 150)}}" alt="">
                         <div class="caption">
                             <h4 class="pull-right">${{$product->purchase['PRICE'] ? $product->purchase['PRICE'] : '10'}}</h4>
-                            <h4><a href="#">{{$product->TITLE}}</a>
+                            <h4><a href="{{route('product', $product->TITLE)}}">{{$product->TITLE}}</a>
                             </h4>
                         </div>
                         <div class="ratings">
@@ -112,7 +112,7 @@
                             <img src="{{cloudinaryShow($product->url, 320, 150)}}" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">${{$product->purchase['PRICE'] ? $product->purchase['PRICE'] : '10'}}</h4>
-                                <h4><a href="#">{{$product->TITLE}}</a>
+                                <h4><a href="{{route('product', $product->TITLE)}}">{{$product->TITLE}}</a>
                                 </h4>
                             </div>
                             <div class="ratings">
